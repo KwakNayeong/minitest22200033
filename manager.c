@@ -43,7 +43,6 @@ void saveData(Product p[], int count){
 	fprintf(fp,"\nNo. Name          weight price\n");
         fprintf(fp,"================================\n");
         for(int i=0; i<count; i++){
-
         	fprintf(fp,"%2d.", i+1);
        		fprintf(fp,"%-15s %3dg %4d원\n",p[i].name,p[i].weight,p[i].price);
    	 }
